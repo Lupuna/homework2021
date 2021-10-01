@@ -1,8 +1,10 @@
 a = input("Введите целое число от 0 до 99: ")
+
 if not a.isdigit():
     print("Не, ну я так не играю. Введите число от 0 до 99")
 if a.isdigit():
     a = int(a)
+    
     if 0 <= a <= 19:
         if a == 0:
             print("ноль")
@@ -46,6 +48,7 @@ if a.isdigit():
             print("девятнадцать")
     elif 20 <= a <= 99:
         a = str(a)
+        
         if int(a[0]) == 2:
             print("двадцать", end="")
         elif int(a[0]) == 3:
@@ -66,23 +69,24 @@ if a.isdigit():
         if int(a[1]) == 0:
             print(" +")
         elif int(a[1]) == 1:
-            print(" один")
+            print("один")
         elif int(a[1]) == 2:
-            print(" два")
+            print("два")
         elif int(a[1]) == 3:
-            print(" три")
+            print("три")
         elif int(a[1]) == 4:
-            print(" четыре")
+            print("четыре")
         elif int(a[1]) == 5:
             print("пять")
         elif int(a[1]) == 6:
-            print(" шесть")
+            print("шесть")
         elif int(a[1]) == 7:
-            print(" семь")
+            print("семь")
         elif int(a[1]) == 8:
-            print(" восемь")
+            print("восемь")
         elif int(a[1]) == 9:
-            print(" девять")
+            print("девять")
     else:
         print("Не ну я так не играю. Введите число от 0 до 99")
+        
 input()
